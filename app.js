@@ -12,15 +12,16 @@ app.use(bodyParser.urlencoded({
 
 //Routes
 app.use(require('./router'));
- 
-var server = app.listen(obj.port, function (err) {
-  console.log("Server Listening on port " + obj.port);
+
+var port = obj.port || 3000;
+var server = app.listen(port, function (err) {
+  console.log("Server Listening on port " + port);
 });
 
 server.on("error",(err) =>{
   // handle port in use exception
   if(err.errno === 'EADDRINUSE')
-         console.log("port " + obj.port + " already in use");
+         console.log("port " + port + " already in use");
     else
          console.log(err);
   process.exit(1);
