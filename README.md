@@ -10,7 +10,7 @@ run ``` node app.js ``` to start the app.
 
 
 Send a post request to 
-http://hostName:portNo/get_meta_data
+http://host_name:port_no/get_meta_data
 
 
 with body as
