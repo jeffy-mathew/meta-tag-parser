@@ -11,7 +11,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.2",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "request": "^2.88.0",
     "valid-url": "^1.0.9"
   }
